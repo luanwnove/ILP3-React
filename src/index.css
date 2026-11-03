@@ -1,0 +1,18 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1e293b;
+  background: #f5f7fb;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+.container { max-width: 900px; margin: 48px auto; padding: 0 24px 48px; }
+h1 { color: #1d4ed8; margin-bottom: 8px; }
+h2 { margin-top: 32px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; }
+.card, .lista-alunos { background: white; border: 1px solid #dce3ed; border-radius: 10px; padding: 18px; }
+.card h3 { margin-top: 0; }
+.card p { margin-bottom: 0; color: #475569; }
+.aluno { padding: 12px 0; margin: 0; border-bottom: 1px solid #e2e8f0; }
+.aluno:last-child { border-bottom: 0; }
