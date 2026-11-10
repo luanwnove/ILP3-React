@@ -1,3 +1,3 @@
 export default function Aluno({ nome, curso }) {
-  return <p className="aluno">{nome} — {curso}</p>
+  return <li>{nome} — {curso}</li>
 }

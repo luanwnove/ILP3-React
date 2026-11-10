@@ -1,29 +1,31 @@
-import Card from './components/Card.jsx'
 import Aluno from './components/Aluno.jsx'
+import Card from './components/Card.jsx'
+import Counter from './components/Counter.jsx'
+import ProductList from './components/ProductList.jsx'
+import UserList from './components/UserList.jsx'
+
+const alunos = [
+  { id: 1, nome: 'Ana', curso: 'Informática para Negócios' },
+  { id: 2, nome: 'Bruno', curso: 'Análise e Desenvolvimento de Sistemas' },
+  { id: 3, nome: 'Carla', curso: 'Informática para Negócios' }
+]
 
 export default function App() {
-  const curso = 'ILP3 — React.js'
-  const aula = 11
-
   return (
     <main className="container">
-      <h1>{curso}</h1>
-      <h2>Aula {aula} — Introdução ao React</h2>
-      <p>Este é o primeiro componente React criado com Vite.</p>
+      <header className="cabecalho">
+        <p className="etiqueta">Linguagem de Programação III</p>
+        <h1>React — Aula 12</h1>
+        <p>Props, useState, imutabilidade e renderização dinâmica.</p>
+      </header>
 
-      <h2>Conceitos da aula</h2>
-      <div className="cards">
-        <Card titulo="Virtual DOM" />
-        <Card titulo="Componentes Funcionais" />
-        <Card titulo="JSX" />
-      </div>
+      <Card titulo="Componentes e props — Aula 11">
+        <ul>{alunos.map(aluno => <Aluno key={aluno.id} nome={aluno.nome} curso={aluno.curso} />)}</ul>
+      </Card>
 
-      <h2>Alunos</h2>
-      <section className="lista-alunos" aria-label="Lista de alunos">
-        <Aluno nome="Ana" curso="Informática para Negócios" />
-        <Aluno nome="Bruno" curso="Análise e Desenvolvimento de Sistemas" />
-        <Aluno nome="Carla" curso="Gestão da Tecnologia da Informação" />
-      </section>
+      <Counter />
+      <UserList />
+      <ProductList />
     </main>
   )
 }
