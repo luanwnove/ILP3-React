@@ -1,24 +1,32 @@
-# ILP3 — React Aula 12
+# ILP3 — React (Aulas 11 a 13)
 
-Projeto React com Vite para a Aula 12 de Linguagem de Programação III. Inclui os componentes de props da Aula 11 e os exemplos de `useState`, imutabilidade, passagem de estado para componentes filhos e listas dinâmicas.
+Projeto acadêmico React com Vite, contendo exercícios progressivos de Linguagem de Programação III.
 
-## Executar
+## Aula 11
 
-```bash
-npm install
-npm run dev
+Componentes funcionais, JSX e props com `Card` e `Aluno`.
+
+## Aula 12
+
+Gerenciamento de estado com `Counter`, `Display`, `UserList` e `ProductList`, incluindo total calculado com `reduce()`.
+
+## Aula 13
+
+`TodoApp` apresenta formulário controlado, eventos `onChange`, `onSubmit` e `onClick`, tarefas renderizadas com `map()`, identificadores únicos estáveis, remoção de itens, seleção de prioridade e limpeza da lista. O botão Adicionar permanece desabilitado quando a tarefa está vazia.
+
+## Execução
+
+```powershell
+npm.cmd install
+npm.cmd run dev
 ```
 
-## Verificar o build
+## Verificação
 
-```bash
-npm run build
+```powershell
+npm.cmd run build
 ```
 
-## Funcionalidades
+## Entrega
 
-- Contador com incremento e decremento.
-- Componente `Display` que recebe o valor por props.
-- Lista de usuários com atualização imutável.
-- Lista de produtos com nome, preço, botão para adicionar e total calculado por `reduce`.
-- Componente `Aluno` e reutilização de `Card` da Aula 11.
+Registre um commit da Aula 13 no repositório existente `ILP3-React` e capture a tela mostrando a lista com tarefas de diferentes prioridades e o total.

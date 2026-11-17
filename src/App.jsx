@@ -3,6 +3,7 @@ import Card from './components/Card.jsx'
 import Counter from './components/Counter.jsx'
 import ProductList from './components/ProductList.jsx'
 import UserList from './components/UserList.jsx'
+import TodoApp from './components/TodoApp.jsx'
 
 const alunos = [
   { id: 1, nome: 'Ana', curso: 'Informática para Negócios' },
@@ -15,8 +16,8 @@ export default function App() {
     <main className="container">
       <header className="cabecalho">
         <p className="etiqueta">Linguagem de Programação III</p>
-        <h1>React — Aula 12</h1>
-        <p>Props, useState, imutabilidade e renderização dinâmica.</p>
+        <h1>React — Aulas 11 a 13</h1>
+        <p>Componentes, estados, eventos, formulários controlados e listas dinâmicas.</p>
       </header>
 
       <Card titulo="Componentes e props — Aula 11">
@@ -26,6 +27,7 @@ export default function App() {
       <Counter />
       <UserList />
       <ProductList />
+      <TodoApp />
     </main>
   )
 }
